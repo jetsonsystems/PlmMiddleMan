@@ -1,0 +1,150 @@
+/* Reset
+@import _reset
+
+/* Mixins
+@import _mixins
+
+/* Colors
+@import _colors
+
+/* Dimensions
+@import _dimensions
+
+/* Semantic Grid
+@import _grid
+
+/* Fonts
++font-face("entypo", "entypo-webfont")
+
+/* Image path
+$image-path: "/images/"
+
+/* Tell the browser to render HTML 5 elements as block
+header, footer, aside, nav, article, section, main
+  display: block
+
+// Need these for sticky footer
+html, body
+  height: 100%
+  margin: 0
+
+body
+  color: $white
+  font-family: Helvetica
+  font-size: 12px
+  // background: $black
+  // height: 100%
+
+a
+  text-decoration: none
+  color: $white
+
+a:hover
+  color: $blue
+
+.selected
+  color: $blue
+
+hr
+  border: 0
+  border-top: 1px solid $emboss-dark
+  height: 1px
+  background-color: #363636
+
+section#container
+  // border: 1px solid black
+  // +display-flex
+  // +flex-direction(column)
+  // +flex-direction(row)
+
+  // min-height: 800px
+
+  header
+    // border: 1px dashed white
+    height: 60px
+    // color: $white
+    background: black
+    padding-left: 60px
+
+    ul
+      +display-flex
+      +flex-direction(row)
+      // border: 1px dashed red
+      height: 60px
+
+      // -webkit-align-items: baseline
+      // align-items: baseline
+
+      // -webkit-align-items: center
+      // align-items: center
+
+      li
+        // +flex-ratio(1)
+        font-family: 'entypo'
+        font-size: 50px
+        width: 50px
+        // border: 1px dashed red
+        cursor: pointer
+        text-align: center
+        border-top: 5px solid $black
+
+      li:hover
+        color: $blue
+        background: $right-column-gray-bg
+        border-top: 5px solid $blue
+        // border: 1px dashed green
+
+        // border: 1px dashed green
+
+  footer
+    // border: 1px dashed red
+    height: 30px
+    // color: $white
+    background: black
+    padding-left: 60px
+
+  #row
+    +display-flex
+    +flex-direction(row)
+    // border: 1px dashed green
+    min-height: 800px
+
+    nav
+      width: 60px
+      background: $black
+
+      ul
+        +display-flex
+        +flex-direction(column)
+        height: 60px
+
+        li
+          font-family: 'entypo'
+          font-size: 50px
+          width: 60px
+          cursor: pointer
+          text-align: center
+          border-left: 5px solid $black
+
+        li:hover
+          color: $blue
+          // background: $right-column-gray-bg
+          background: $left-column-gray-bg
+          border-left: 5px solid $blue
+
+    #hamburger
+      // border: 1px dashed blue
+      +flex-ratio(1)
+      background: $left-column-gray-bg
+      // color: $white
+      // display: none
+
+    main
+      // border: 1px dashed red
+      +flex-ratio(2)
+      background: $right-column-gray-bg
+
+    aside
+      // border: 1px dashed red
+      +flex-ratio(1)
+      background: $right-column-gray-bg
