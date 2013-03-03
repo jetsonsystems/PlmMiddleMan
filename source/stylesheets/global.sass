@@ -51,6 +51,11 @@ hr
   height: 1px
   background-color: #363636
 
+#logo
+  position: absolute
+  top: 10px
+  right: 10px
+
 section#container
   // border: 1px solid black
   // +display-flex
@@ -70,18 +75,69 @@ section#container
     +rounded-corners(5px)
     border: 1px solid black
     color: #989898
+    cursor: pointer
 
     // Gradient on text, pretty awesome
-    background: -webkit-linear-gradient(#eee, #333)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    // background: -webkit-linear-gradient(#eee, #333)
+    // -webkit-background-clip: text
+    // -webkit-text-fill-color: transparent
+    background: $left-column-gray-bg
 
   .icon-button:hover, .icon-button.selected
     color: $blue
     // Need to have a non-gradient gradient here otherwise no hover effect works
-    background: -webkit-linear-gradient($blue, $blue)
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    // background: -webkit-linear-gradient($blue, $blue)
+    // -webkit-background-clip: text
+    // -webkit-text-fill-color: transparent
+
+  // Not used yet
+  .flex-horizontal
+    +display-flex
+    +flex-direction(row)
+
+  // Not used yet
+  .flex-vertical
+    +display-flex
+    +flex-direction(column)
+
+  // Tertiary title bars
+  .title-bar
+    height: 42px
+    padding-top: 8px
+    // padding-left: $small-spacing
+
+    // Background Gradient
+    background-color: #292929
+    -moz-box-shadow: 1px 1px 0 #1f1f1f, inset 1px 1px 0 rgba(255,255,255,.14)
+    -webkit-box-shadow: 1px 1px 0 #1f1f1f, inset 1px 1px 0 rgba(255,255,255,.14)
+    box-shadow: 1px 1px 0 #1f1f1f, inset 1px 1px 0 rgba(255,255,255,.14)
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM5MzkzOSIgc3RvcC1vcGFjaXR5PSIxIi8+CjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQ5NDk0OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgIDwvbGluZWFyR3JhZGllbnQ+Cgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0idXJsKCNoYXQwKSIgLz4KPC9zdmc+)
+    background-image: -moz-linear-gradient(bottom, #393939 0%, #494949 100%)
+    background-image: -o-linear-gradient(bottom, #393939 0%, #494949 100%)
+    background-image: -webkit-linear-gradient(bottom, #393939 0%, #494949 100%)
+    background-image: linear-gradient(bottom, #393939 0%, #494949 100%)
+    +clearfix
+
+    h1
+      font-size: 30px
+      float: left
+      margin-left: $small-spacing
+      font-family: Helvetica
+
+    .search-gear
+      float: right
+      // border: 1px dashed red
+      margin-right: $standard-spacing*3
+      // margin-right: $small-spacing
+
+    .search-gear > .icon-button
+      float: right
+      margin-left: $small-spacing
+
+  .title-bar > .icon-button
+    // border: 1px dashed red
+    float: left
+    margin-left: $small-spacing
 
   header
     // border: 1px dashed white
@@ -146,26 +202,24 @@ section#container
         li
           font-family: 'entypo'
           font-size: 50px
-          width: 60px
+          width: 50px
           cursor: pointer
           text-align: center
           border-left: 5px solid $black
+          border-right: 5px solid $black
+          cursor: pointer
 
         li:hover, li.selected
           color: $blue
-          // background: $right-column-gray-bg
           background: $left-column-gray-bg
+          border-right: 5px solid $left-column-gray-bg
           border-left: 5px solid $blue
 
     #hamburger
-      // border: 1px dashed blue
       +flex-ratio(1)
       background: $left-column-gray-bg
-      // color: $white
-      // display: none
 
     main
-      // border: 1px dashed red
       +flex-ratio(2)
       background: $right-column-gray-bg
 

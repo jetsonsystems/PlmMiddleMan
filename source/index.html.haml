@@ -1,4 +1,8 @@
 %section#container
+
+  %h1#logo
+    %img{:src => '/images/PLM-Logo.png'}
+
   %header
 
     %ul
@@ -79,36 +83,39 @@
           \&#9881
 
     %div#hamburger
-      Hamburger
 
-      // Gear
-      %div.icon-button
-        \&#9881
+      %div.title-bar
+        %div.icon-button
+          \&#9776
 
-      // Search
-      %div.icon-button
-        \&#128269
-
-      // Hamburger
-      %div.icon-button
-        \&#9776
-
-      // Person
-      %div.icon-button
-        \&#128100
-
-      // Globe
-      %div.icon-button
-        \&#127758
-
-      // Floorplan
-      %div.icon-button
-        \&#59175
+        %h1
+          92 Locust
 
     %main
-      Main
+      %div.title-bar
 
-    %aside
+        // Globe
+        %div.icon-button
+          \&#127758
+
+        // Person
+        %div.icon-button
+          \&#128100
+
+        // Floorplan
+        %div.icon-button
+          \&#59175
+
+        %div.search-gear
+          // Gear
+          %div.icon-button
+            \&#9881
+
+          // Search
+          %div.icon-button
+            \&#128269
+
+    -# %aside
       Aside
 
   %footer
