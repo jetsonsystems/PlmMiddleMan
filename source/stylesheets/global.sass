@@ -59,6 +59,30 @@ section#container
 
   // min-height: 800px
 
+  .icon-button
+    width: 30px
+    height: 30px
+    font-family: 'entypo'
+    font-size: 40px
+    line-height: 30px
+    text-align: center
+    vertical-align: middle
+    +rounded-corners(5px)
+    border: 1px solid black
+    color: #989898
+
+    // Gradient on text, pretty awesome
+    background: -webkit-linear-gradient(#eee, #333)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+  .icon-button:hover, .icon-button.selected
+    color: $blue
+    // Need to have a non-gradient gradient here otherwise no hover effect works
+    background: -webkit-linear-gradient($blue, $blue)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
   header
     // border: 1px dashed white
     height: 60px
@@ -88,7 +112,7 @@ section#container
         text-align: center
         border-top: 5px solid $black
 
-      li:hover
+      li:hover, li.selected
         color: $blue
         background: $right-column-gray-bg
         border-top: 5px solid $blue
@@ -102,6 +126,7 @@ section#container
     // color: $white
     background: black
     padding-left: 60px
+    line-height: 30px
 
   #row
     +display-flex
@@ -126,7 +151,7 @@ section#container
           text-align: center
           border-left: 5px solid $black
 
-        li:hover
+        li:hover, li.selected
           color: $blue
           // background: $right-column-gray-bg
           background: $left-column-gray-bg
