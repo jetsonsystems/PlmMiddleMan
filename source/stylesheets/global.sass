@@ -251,6 +251,7 @@ section#container
       +flex-ratio(1)
       background: $left-column-gray-bg
       border-right: 1px solid $emboss-dark
+      display: none
 
     main
       +flex-ratio(2)
@@ -261,3 +262,29 @@ section#container
       // border: 1px dashed red
       +flex-ratio(1)
       background: $right-column-gray-bg
+
+#pageslide
+  display: none
+  // position: absolute
+  position: fixed
+  // top: 0
+  top: 110px
+  // left: 70px
+  height: 100%
+  // z-index: 999999
+  // z-index: 1000
+  // border: 1px dashed red
+
+  // width: 260px
+  width: 300px
+  // padding: 0 20px
+  padding: 20px
+
+  background-color: #333
+  color: #fff
+  -webkit-box-shadow: inset 0 0 5px 5px #222
+  -moz-box-shadow: inset 0 0 5px 5px #222
+  box-shadow: inset 0 0 5px 5px #222
+
+#modal
+  display: none

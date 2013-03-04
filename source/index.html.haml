@@ -95,7 +95,7 @@
       %div.title-bar
 
         // Globe
-        %div.icon-button
+        %div.icon-button#hamburger-animate
           \&#127758
 
         // Person
@@ -114,6 +114,15 @@
           // Search
           %div.icon-button
             \&#128269
+
+      %div#content
+        Hello
+
+        <a href="#modal" class="second">Slide to the left 3, and display hidden content from this page in a modal pane.</a>
+
+      %div#modal
+        %p
+          This slide uses "modal" option set to "true". When using a modal pageslide, clicking on the main window will not close the window.
 
     -# %aside
       Aside
