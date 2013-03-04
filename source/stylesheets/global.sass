@@ -270,7 +270,7 @@ section#container
           border-right: 5px solid $left-column-gray-bg
           border-left: 5px solid $blue
 
-    #hamburger
+    // #hamburger
       +flex-ratio(1)
       background: $left-column-gray-bg
       border-right: 1px solid $emboss-dark
@@ -280,6 +280,29 @@ section#container
       +flex-ratio(2)
       background: $right-column-gray-bg
       border-left: 1px solid $emboss-light
+
+      #content
+        border: 1px dashed red
+        +display-flex
+        +flex-direction(row)
+        min-height: 800px
+
+        #left-column
+          border: 1px dashed red
+          // +flex-ratio(1)
+          width: 380px
+          // +display-flex
+
+        #middle-column
+          border: 1px dashed red
+          +flex-ratio(2)
+          // +display-flex
+
+        #right-column
+          border: 1px dashed red
+          width: 380px
+          // +flex-ratio(1)
+          // +display-flex
 
     aside
       // border: 1px dashed red
@@ -301,13 +324,64 @@ section#container
   // width: 260px
   width: 380px
   // padding: 0 20px
-  padding: 20px
+  // padding: 20px
 
-  background-color: #333
+  background-color: #1d1d1d
   color: #fff
   // -webkit-box-shadow: inset 0 0 5px 5px #222
   // -moz-box-shadow: inset 0 0 5px 5px #222
   // box-shadow: inset 0 0 5px 5px #222
 
-#modal
+#hamburger
   display: none
+
+.hamburger-header-item
+  // border: 1px dashed red
+  height: 80px
+  +clearfix
+
+  .icon
+    // border: 1px dashed green
+    font-family: 'entypo'
+    color: $white
+    font-size: 50px
+    float: left
+    margin-left: $standard-spacing
+    margin-top: 10px
+
+  h2
+    font-size: 20px
+    float: left
+    margin-top: 27px
+    margin-left: $small-spacing
+
+.hamburger-header-item:hover
+  background: #2a2a2a
+  border-bottom: 1px solid $black
+  color: $blue
+
+.hamburger-item
+  // border: 1px dashed red
+  padding-left: 50px
+  padding-top: 13px
+  height: 70px
+  +clearfix
+
+  .icon
+    font-family: 'entypo'
+    font-size: 40px
+    // border: 1px dashed red
+    float: left
+
+  .text
+    // border: 1px dashed red
+    margin-left: 15px
+    float: left
+
+    .title
+      font-size: 18px
+
+.hamburger-item:hover
+  background: #2a2a2a
+  border-bottom: 1px solid $black
+  color: $blue

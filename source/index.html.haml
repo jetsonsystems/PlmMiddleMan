@@ -100,23 +100,13 @@
           %a{:href => "#"}
             \&#9881
 
-    -# %div#hamburger
-
-      %div.title-bar
-        %div.icon-button
-          \&#9776
-
-        %h1
-          92 Locust
-
     %main
-      -# %div.title-bar.flex-horizontal
       %div.title-bar
 
         %div#page-title-collection
           // Hamburger
           %div.icon-button
-            %a{:href => "#modal", :class => "second"}
+            %a{:href => "#hamburger", :class => "hamburger-button"}
               \&#9776
 
           // Page title
@@ -152,13 +142,57 @@
               \&#9881
 
       %div#content
-        Hello
 
-        -# <a href="#modal" class="second">Slide to the left 3, and display hidden content from this page in a modal pane.</a>
+        %div#left-column
+          Hello
+        %div#middle-column
+          Hello
+        %div#right-column
+          Hello
 
-      %div#modal
-        %p
-          This slide uses "modal" option set to "true". When using a modal pageslide, clicking on the main window will not close the window.
+      %div#hamburger
+
+        %div.hamburger-header-item
+          %div.icon
+            // Arrow Right
+            \&#59234;
+            // House
+            \&#8962;
+          %h2
+            US Properties (10)
+
+        -# %div.hamburger-title
+          %div.hamburger-title-icons
+            // Arrow Right
+            \&#59234;
+            // House
+            \&#8962;
+          %h2
+            US Properties (10)
+
+        %div.hamburger-item
+          %div.icon
+            // House
+            \&#8962;
+          %div.text
+            %div.title
+              92 Locust
+            %div.address
+              92 Locust Avenue
+              %br
+              Mill Valley, CA
+
+        %div.hamburger-item
+          %div.icon
+            // House
+            \&#8962;
+          %div.text
+            %div.title
+              92 Locust
+            %div.address
+              92 Locust Avenue
+              %br
+              Mill Valley, CA
 
     -# %aside
       Aside

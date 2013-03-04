@@ -1,13 +1,6 @@
 $(document).ready(function(){
 
-  /*
-  $("#hamburger-animate").click(function(){
-    console.log('Hamburger clicked.');
-    $("#hamburger").show().animate({width: '240px', avoidTransforms: true, useTranslate3d: true}, 'fast');
-  });
-  */
+  // Activate the hamburger slider
+  $(".hamburger-button").pageslide({ direction: "right", modal: false });
 
-  // $("#hamburger-animate").pageslide({ direction: "left", modal: true });
-
-  $(".second").pageslide({ direction: "right", modal: false });
 });
