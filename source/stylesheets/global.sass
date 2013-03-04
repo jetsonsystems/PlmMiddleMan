@@ -282,21 +282,84 @@ section#container
       border-left: 1px solid $emboss-light
 
       #content
-        border: 1px dashed red
+        // border: 1px dashed red
         +display-flex
         +flex-direction(row)
         min-height: 800px
 
         #left-column
-          border: 1px dashed red
+          // border: 1px dashed red
           // +flex-ratio(1)
           width: 380px
           // +display-flex
 
+          #lighting-load
+            margin-left: 15px
+            padding-top: 20px
+            // border: 1px dashed red
+
         #middle-column
-          border: 1px dashed red
+          // border: 1px dashed red
           +flex-ratio(2)
           // +display-flex
+
+          #floorplan
+            // border: 1px dashed blue
+            padding-top: 40px
+            margin-left: 40px
+
+            img
+              width: 700px
+
+            // Light on map
+            .light
+              // border: 1px dashed red
+              width: 100px
+              cursor: pointer
+
+              .title
+                font-size: 15px
+                text-align: center
+
+              .title:hover
+                color: $blue
+
+              .icon
+                font-family: 'entypo'
+                font-size: 40px
+                text-align: center
+
+              .icon:hover
+                color: $blue
+
+            div.light:hover
+              $color: $blue
+              // border: 1px solid green
+
+            // Kitchen Light
+            div#kitchen-light
+              margin-top: -320px
+              margin-left: 130px
+
+            // Dining Room
+            div#dining-light
+              margin-top: 55px
+              margin-left: 90px
+
+            // Living Room
+            div#living-light
+              margin-top: -40px
+              margin-left: 220px
+
+            // Entertainment Room
+            div#entertainment-light
+              margin-top: 0px
+              margin-left: 410px
+
+            // Patio
+            div#patio-light
+              margin-top: -300px
+              margin-left: 460px
 
         #right-column
           border: 1px dashed red
