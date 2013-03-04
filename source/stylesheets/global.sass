@@ -57,12 +57,6 @@ hr
   right: 10px
 
 section#container
-  // border: 1px solid black
-  // +display-flex
-  // +flex-direction(column)
-  // +flex-direction(row)
-
-  // min-height: 800px
 
   .icon-button
     width: 30px
@@ -76,6 +70,9 @@ section#container
     border: 1px solid black
     color: #989898
     cursor: pointer
+    display: inline-block
+    margin-top: 5px
+    margin-right: 5px
 
     // Gradient on text, pretty awesome
     // background: -webkit-linear-gradient(#eee, #333)
@@ -103,7 +100,7 @@ section#container
   // Tertiary title bars
   .title-bar
     height: 42px
-    padding-top: 8px
+    // padding-top: 8px
 
     // Background Gradient
     background-color: #292929
@@ -118,29 +115,37 @@ section#container
     background-image: -webkit-linear-gradient(bottom, #393939 0%, #494949 100%)
     background-image: linear-gradient(bottom, #393939 0%, #494949 100%)
     border-left: none
-    +clearfix
 
-    h1
-      font-size: 30px
-      float: left
-      margin-left: $small-spacing
-      font-family: Helvetica
-      margin-top: 2px
+    +display-flex
+    +flex-direction(row)
 
-    .search-gear
-      float: right
+    #page-title-collection
+      width: 380px
       // border: 1px dashed red
-      margin-right: $standard-spacing*3
-      // margin-right: $small-spacing
+      padding-left: $small-spacing
+      border-right: 1px solid $emboss-dark
+      +display-flex
 
-    .search-gear > .icon-button
-      float: right
-      margin-left: $small-spacing
+      h1
+        font-size: 25px
+        font-family: Helvetica
+        margin-top: 8px
+        margin-left: $small-spacing
 
-  .title-bar > .icon-button
-    // border: 1px dashed red
-    float: left
-    margin-left: $small-spacing
+    #main-button-collection
+      +flex-ratio(3)
+      border-left: 1px solid $emboss-light
+      padding-left: $small-spacing
+      // border: 1px dashed red
+
+    #search-gear-collection
+      // +flex-ratio(1)
+      +display-flex
+      width: 130px
+      // -moz-box-pack: end
+      // -webkit-box-pack: end
+      // box-pack: end
+      // border: 1px dashed blue
 
   header
     // border: 1px dashed white
@@ -219,7 +224,6 @@ section#container
   #row
     +display-flex
     +flex-direction(row)
-    // border: 1px dashed green
     min-height: 800px
 
     nav
@@ -234,7 +238,7 @@ section#container
         li
           font-family: 'entypo'
           font-size: 50px
-          width: 50px
+          width: 60px
           cursor: pointer
           text-align: center
           border-left: 5px solid $black

@@ -82,7 +82,7 @@
         %li
           \&#9881
 
-    %div#hamburger
+    -# %div#hamburger
 
       %div.title-bar
         %div.icon-button
@@ -92,33 +92,45 @@
           92 Locust
 
     %main
+      -# %div.title-bar.flex-horizontal
       %div.title-bar
 
-        // Globe
-        %div.icon-button#hamburger-animate
-          \&#127758
-
-        // Person
-        %div.icon-button
-          \&#128100
-
-        // Floorplan
-        %div.icon-button
-          \&#59175
-
-        %div.search-gear
-          // Gear
+        %div#page-title-collection
+          // Hamburger
           %div.icon-button
-            \&#9881
+            \&#9776
+
+          // Page title
+          %h1
+            92 Locust
+
+        %div#main-button-collection
+          // Globe
+          %div.icon-button#hamburger-animate
+            \&#127758
+
+          // Person
+          %div.icon-button
+            \&#128100
+
+          // Floorplan
+          %div.icon-button
+            \&#59175
+
+        %div#search-gear-collection
 
           // Search
           %div.icon-button
             \&#128269
 
-      %div#content
-        Hello
+          // Gear
+          %div.icon-button
+            \&#9881
 
-        <a href="#modal" class="second">Slide to the left 3, and display hidden content from this page in a modal pane.</a>
+      %div#content
+        -# Hello
+
+        -# <a href="#modal" class="second">Slide to the left 3, and display hidden content from this page in a modal pane.</a>
 
       %div#modal
         %p
