@@ -183,6 +183,35 @@ section#container
     background: black
     padding-left: 60px
     line-height: 30px
+    +clearfix
+
+    ul
+      +display-flex
+      +flex-direction(row)
+
+      li
+        font-size: 10px
+
+      li:after
+        content: "|"
+        margin-left: 5px
+        margin-right: 10px
+
+      li:last-child:after
+        content: ""
+
+      // Special case for London location in footer
+      li.location
+        margin-right: $standard-spacing*3
+
+      li.location:after
+        content: ""
+
+    #account-collection
+      float: left
+
+    #weather-collection
+      float: right
 
   #row
     +display-flex
