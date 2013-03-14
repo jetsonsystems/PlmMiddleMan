@@ -380,7 +380,8 @@ section#container
   // top: 0
   top: 103px
   // left: 70px
-  height: 100%
+  // height: 100%
+  height: 800px
   // z-index: 999999
   // z-index: 1000
   // border: 1px dashed red
@@ -465,14 +466,15 @@ section#container
 // Surveillance
 #surveillance-collection
   // border: 1px dashed red
-  padding: $standard-spacing*2
+  padding: $standard-spacing
   padding-bottom: 0
 
   .surveillance-medium-thumb
 
     .surveillance-medium
       border: 1px solid black
-      width: 280px
+      // width: 280px
+      width: 340px
 
     .surveillance-medium:hover
       border: 1px solid white
@@ -482,7 +484,7 @@ section#container
       font-size: 10px
       padding: $small-spacing
       +rgba-background($black, 0.4)
-      width: 280px
+      width: 340px
       margin-top: -33px
       z-index: 200
       position: absolute
@@ -493,7 +495,8 @@ section#container
     padding: $small-spacing
 
 #surveillance-thumbs-collection
-  padding: $standard-spacing $standard-spacing*2
+  // padding: $standard-spacing $standard-spacing*2
+  padding: $standard-spacing $standard-spacing
   // border: 1px dotted red
   // max-height: 200px
   // overflow: auto
@@ -502,13 +505,17 @@ section#container
 
   .surveillance-small-thumb
     float: left
-    margin-left: $small-spacing
-    margin-bottom: $small-spacing
+    // margin-left: $small-spacing
+    // margin-bottom: $small-spacing
+    margin-right: 5px
+    margin-bottom: 5px
 
     .surveillance-small
       border: 1px solid black
-      width: 132px
-      height: 100px
+      // width: 132px
+      // height: 100px
+      width: 165px
+      height: 125px
 
     .surveillance-small:hover
       border: 1px solid white
@@ -518,7 +525,7 @@ section#container
       font-size: 10px
       padding: $small-spacing/2
       +rgba-background($black, 0.4)
-      width: 132px
+      width: 165px
       margin-top: -23px
       z-index: 200
       position: absolute
