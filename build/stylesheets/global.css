@@ -486,18 +486,18 @@ section#container #row aside {
   display: none;
   position: fixed;
   top: 103px;
-  height: 100%;
+  height: 800px;
   width: 380px;
   background-color: #1d1d1d;
   color: white;
 }
 
-/* line 399, global.sass */
+/* line 400, global.sass */
 #hamburger {
   display: none;
 }
 
-/* line 402, global.sass */
+/* line 403, global.sass */
 .hamburger-header-item {
   height: 80px;
   *display: inline-block;
@@ -510,7 +510,7 @@ section#container #row aside {
   clear: both;
   visibility: hidden;
 }
-/* line 407, global.sass */
+/* line 408, global.sass */
 .hamburger-header-item .icon {
   font-family: "entypo";
   color: white;
@@ -519,7 +519,7 @@ section#container #row aside {
   margin-left: 20px;
   margin-top: 10px;
 }
-/* line 416, global.sass */
+/* line 417, global.sass */
 .hamburger-header-item h2 {
   font-size: 20px;
   float: left;
@@ -527,14 +527,14 @@ section#container #row aside {
   margin-left: 10px;
 }
 
-/* line 422, global.sass */
+/* line 423, global.sass */
 .hamburger-header-item:hover {
   background: #2a2a2a;
   border-bottom: 1px solid black;
   color: #6dcff6;
 }
 
-/* line 427, global.sass */
+/* line 428, global.sass */
 .hamburger-item {
   padding-left: 50px;
   padding-top: 13px;
@@ -549,54 +549,54 @@ section#container #row aside {
   clear: both;
   visibility: hidden;
 }
-/* line 434, global.sass */
+/* line 435, global.sass */
 .hamburger-item .icon {
   font-family: "entypo";
   font-size: 40px;
   float: left;
 }
-/* line 440, global.sass */
+/* line 441, global.sass */
 .hamburger-item .text {
   margin-left: 15px;
   float: left;
 }
-/* line 445, global.sass */
+/* line 446, global.sass */
 .hamburger-item .text .title {
   font-size: 18px;
 }
 
-/* line 448, global.sass */
+/* line 449, global.sass */
 .hamburger-item:hover {
   background: #2a2a2a;
   border-bottom: 1px solid black;
   color: #6dcff6;
 }
 
-/* line 453, global.sass */
+/* line 454, global.sass */
 .hamburger-item.photos {
   margin-padding: 5px;
   height: 40px;
 }
-/* line 458, global.sass */
+/* line 459, global.sass */
 .hamburger-item.photos .icon {
   margin-top: -12px;
 }
 
-/* line 466, global.sass */
+/* line 467, global.sass */
 #surveillance-collection {
-  padding: 40px;
+  padding: 20px;
   padding-bottom: 0;
 }
-/* line 473, global.sass */
+/* line 474, global.sass */
 #surveillance-collection .surveillance-medium-thumb .surveillance-medium {
   border: 1px solid black;
-  width: 280px;
+  width: 340px;
 }
-/* line 477, global.sass */
+/* line 479, global.sass */
 #surveillance-collection .surveillance-medium-thumb .surveillance-medium:hover {
   border: 1px solid white;
 }
-/* line 480, global.sass */
+/* line 482, global.sass */
 #surveillance-collection .surveillance-medium-thumb .surveillance-thumb-overlay {
   color: white;
   font-size: 10px;
@@ -604,21 +604,21 @@ section#container #row aside {
   background: black;
   background: rgba(0, 0, 0, 0.4);
   -pie-background: rgba(0, 0, 0, 0.4);
-  width: 280px;
+  width: 340px;
   margin-top: -33px;
   z-index: 200;
   position: absolute;
 }
-/* line 490, global.sass */
+/* line 492, global.sass */
 #surveillance-collection .surveillance-medium-thumb-title {
   color: white;
   text-align: center;
   padding: 10px;
 }
 
-/* line 495, global.sass */
+/* line 497, global.sass */
 #surveillance-thumbs-collection {
-  padding: 20px 40px;
+  padding: 20px 20px;
   margin-top: 0;
   *display: inline-block;
 }
@@ -630,23 +630,23 @@ section#container #row aside {
   clear: both;
   visibility: hidden;
 }
-/* line 503, global.sass */
+/* line 506, global.sass */
 #surveillance-thumbs-collection .surveillance-small-thumb {
   float: left;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-/* line 508, global.sass */
-#surveillance-thumbs-collection .surveillance-small-thumb .surveillance-small {
-  border: 1px solid black;
-  width: 132px;
-  height: 100px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 /* line 513, global.sass */
+#surveillance-thumbs-collection .surveillance-small-thumb .surveillance-small {
+  border: 1px solid black;
+  width: 165px;
+  height: 125px;
+}
+/* line 520, global.sass */
 #surveillance-thumbs-collection .surveillance-small-thumb .surveillance-small:hover {
   border: 1px solid white;
 }
-/* line 516, global.sass */
+/* line 523, global.sass */
 #surveillance-thumbs-collection .surveillance-small-thumb .surveillance-small-thumb-overlay {
   color: white;
   font-size: 10px;
@@ -654,22 +654,22 @@ section#container #row aside {
   background: black;
   background: rgba(0, 0, 0, 0.4);
   -pie-background: rgba(0, 0, 0, 0.4);
-  width: 132px;
+  width: 165px;
   margin-top: -23px;
   z-index: 200;
   position: absolute;
 }
 
-/* line 527, global.sass */
+/* line 534, global.sass */
 .photos-header {
   padding: 20px;
 }
-/* line 531, global.sass */
+/* line 538, global.sass */
 .photos-header h2 {
   font-size: 25px;
 }
 
-/* line 534, global.sass */
+/* line 541, global.sass */
 .photos-collection {
   margin-left: 15px;
   margin-bottom: 40px;
@@ -684,29 +684,29 @@ section#container #row aside {
   visibility: hidden;
 }
 
-/* line 541, global.sass */
+/* line 548, global.sass */
 .photo {
   padding: 10px;
   float: left;
 }
-/* line 546, global.sass */
+/* line 553, global.sass */
 .photo img.photo-thumbnail {
   border: 1px solid black;
 }
 
-/* line 549, global.sass */
+/* line 556, global.sass */
 .photo:hover {
   background: #555555;
   -webkit-box-shadow: 0px 0px 10px #333333;
   -moz-box-shadow: 0px 0px 10px #333333;
   box-shadow: 0px 0px 10px #333333;
 }
-/* line 553, global.sass */
+/* line 560, global.sass */
 .photo:hover img.edit-photo {
   display: block;
 }
 
-/* line 557, global.sass */
+/* line 564, global.sass */
 .photo-caption {
   font-size: 13px;
   font-family: Arial;
@@ -714,12 +714,12 @@ section#container #row aside {
   color: #c2c2c2;
   margin-top: 10px;
 }
-/* line 564, global.sass */
+/* line 571, global.sass */
 .photo-caption img {
   margin-bottom: -5px;
   margin-right: 10px;
 }
-/* line 570, global.sass */
+/* line 577, global.sass */
 .photo-caption img.edit-photo {
   float: right;
   margin-right: 0;
