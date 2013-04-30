@@ -27,8 +27,8 @@
           \&#128273
 
       // Camera for photographs
-      %li.selected
-        %a{:href => "/photos.html", :class => "selected"}
+      %li
+        %a{:href => "/photos.html"}
           \&#128247
 
       // Eyeball for video surveillance
@@ -37,8 +37,8 @@
           \&#59146
 
       // Database for Property Data
-      %li
-        %a{:href => "/property-data.html"}
+      %li.selected
+        %a{:href => "/property-data.html", :class => "selected"}
           \&#128248
 
   %div#row
@@ -153,72 +153,186 @@
 
           %div.photos-header
             %h2
-              Property Data Pages Coming Soon
+              92 Locust Fact Sheet
 
-          -# %div.photos-collection
+          %div.form-collection
+            %form
+              %div.form-collection
+                %div.form-left-column
+                  %fieldset
+                    %p
+                      %label{:for => "property_name"}
+                        Property Name
+                      %input{:type => "text", :id => "property_name", :value => "92 Locust"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                    %p
+                      %label{:for => "property_code"}
+                        Property Code
+                      %input{:type => "text", :id => "property_code", :value => "92"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                    %p
+                      %label{:for => "property_address_1"}
+                        Property Address
+                      %input{:type => "text", :id => "property_address_1", :value => "92 Locust Aveneue, Mill Valley"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                    %p
+                      %label{:for => "property_address_2"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                      %input{:type => "text", :id => "property_address_2", :value => "California, USA"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                    %p
+                      %label{:for => "property_company"}
+                        Company
+                      %input{:type => "text", :id => "property_company", :value => "Locust Ave, LLC"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                    %p
+                      %label{:for => "property_location"}
+                        Location
+                      %input{:type => "text", :id => "property_location", :value => "California"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                    %p
+                      %label{:for => "property_region"}
+                        Region
+                      %input{:type => "text", :id => "property_region", :value => "USA"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                  %fieldset
+                    %p
+                      %label{:for => "property_residential_sf"}
+                        Residential SF
+                      %input{:type => "text", :id => "property_residential_sf", :value => "2.768"}
 
-            %div.photo
-              %img{:src => 'http://placehold.it/132x132', :class => 'photo-thumbnail'}
-              %div.photo-caption
-                %img{:src => '/images/Checkbox.png'}
-                1990.jpg
-                %img{:src => '/images/Pencil.png', :class => 'edit-photo'}
+                    %p
+                      %label{:for => "property_contents_value"}
+                        Contents Value
+                      %input{:type => "text", :id => "property_contents_value", :value => "$10,000"}
+
+                    %p
+                      %label{:for => "property_contents_value_psf"}
+                        Contents Value PSF
+                      %input{:type => "text", :id => "property_contents_value_psf", :value => "$36.55"}
+
+                    %p
+                      %label{:for => "property_deductible"}
+                        Deductible
+                      %input{:type => "text", :id => "property_deductible", :value => "$10,000"}
+
+                    %p
+                      %label{:for => "property_insurance"}
+                        Property Insurance
+                      %input{:type => "text", :id => "property_insurance", :value => "$1,550,000"}
+
+                    %p
+                      %label{:for => "property_manager"}
+                        Property Manager
+                      %textarea{:id => "property_manager"}
+                        Austin Lowery
+                        +1 415 640 0209
+                        alowery@grassycreek.nl
+
+                  %fieldset
+                    %p
+                      %label{:for => "property_year_built"}
+                        Year Built
+                      %input{:type => "text", :id => "property_year_built", :value => "1947"}
+
+                    %p
+                      %label{:for => "property_year_renovated"}
+                        Year Renovated
+                      %input{:type => "text", :id => "property_year_renovated", :value => "2010"}
+
+                    %p
+                      %label{:for => "property_bedrooms"}
+                        Bedrooms
+                      %input{:type => "text", :id => "property_bedrooms", :value => "4"}
+
+                    %p
+                      %label{:for => "property_bathrooms"}
+                        Bathrooms
+                      %input{:type => "text", :id => "property_bathrooms", :value => "3"}
+
+                    %p
+                      %label{:for => "property_current_mv_per_bed"}
+                        Current MV Per Bed
+                      %input{:type => "text", :id => "property_current_mv_per_bed", :value => "$615,000"}
+
+                %div.form-right-column
+                  %fieldset
+                    %p
+                      %label{:for => "property_pool_sf"}
+                        Pool SF
+                      %input{:type => "text", :id => "property_pool_sf", :value => "n/a"}
+
+                    %p
+                      %label{:for => "property_hot_tub_sf"}
+                        Hot Tub SF
+                      %input{:type => "text", :id => "property_hot_tub_sf", :value => "n/a"}
+
+                    %p
+                      %label{:for => "property_sauna_sf"}
+                        Sauna SF
+                      %input{:type => "text", :id => "property_sauna_sf", :value => "n/a"}
+
+                    %p
+                      %label{:for => "property_garage_sf"}
+                        Garage SF
+                      %input{:type => "text", :id => "property_garage_sf", :value => "n/a"}
+
+                  %fieldset
+                    %p
+                      %label{:for => "property_av_system_spec"}
+                        AV System Spec
+                      %input{:type => "text", :id => "property_av_system_spec", :value => "AV Spec Info (Crestron, etc.)"}
+
+                    %p
+                      %label{:for => "property_internet_speed"}
+                        Internet Speed
+                      %input{:type => "text", :id => "property_internet_speed", :value => "20MB down/2MB up (TBA)"}
+
+                    %p
+                      %label{:for => "property_internet_provider"}
+                        Internet Provider
+                      %input{:type => "text", :id => "property_internet_provider", :value => "Verizon (TBA)"}
+
+        %div#right-column
+
+          %div#surveillance-collection
+
+            %div.surveillance-medium-thumb
+              %img{:style => "-webkit-user-select: none; cursor: -webkit-zoom-in;", :src => "http://placehold.it/380x250", :class => "surveillance-medium"}
+              %div.surveillance-thumb-overlay
+                Front Yard
+
+            %div.surveillance-medium-thumb-title
+              Front Yard
+
+            %hr
+
+          %div#surveillance-thumbs-collection
+
+            %div.surveillance-small-thumb
+              %img{:style => "-webkit-user-select: none; cursor: -webkit-zoom-in;", :src => "http://placehold.it/165x125", :class => "surveillance-small"}
+              %div.surveillance-small-thumb-overlay
+                SI Front Entrance
+
+            %div.surveillance-small-thumb
+              %img{:style => "-webkit-user-select: none; cursor: -webkit-zoom-in;", :src => "http://placehold.it/165x125", :class => "surveillance-small"}
+              %div.surveillance-small-thumb-overlay
+                Boca Dock Ent
+
+            %div.surveillance-small-thumb
+              %img{:style => "-webkit-user-select: none; cursor: -webkit-zoom-in;", :src => "http://placehold.it/165x125", :class => "surveillance-small"}
+              %div.surveillance-small-thumb-overlay
+                SRL Main Ent
+
+            %div.surveillance-small-thumb
+              %img{:style => "-webkit-user-select: none; cursor: -webkit-zoom-in;", :src => "http://placehold.it/165x125", :class => "surveillance-small"}
+              %div.surveillance-small-thumb-overlay
+                Boca Dock
+
+            %div.surveillance-small-thumb
+              %img{:style => "-webkit-user-select: none; cursor: -webkit-zoom-in;", :src => "http://placehold.it/165x125", :class => "surveillance-small"}
+              %div.surveillance-small-thumb-overlay
+                SRL Bar
 
       %div#hamburger
 

@@ -396,7 +396,7 @@ section#container
               margin-left: 460px
 
         #right-column
-          border: 1px dashed red
+          // border: 1px dashed red
           width: 380px
           // +flex-ratio(1)
           // +display-flex
@@ -613,3 +613,39 @@ section#container
     margin-right: 0
     display: none
     // border: none
+
+// Property Data Pages
+form
+  margin-left: $standard-spacing
+
+  fieldset
+    // border: 1px dashed red
+    margin-bottom: $standard-spacing
+
+  label
+    color: $gray-text
+    display: inline-block
+    width: 150px
+
+  input[type=text], textarea
+    background-color: $left-column-gray-bg
+    border: none
+    color: $white
+    padding: 3px 10px
+    width: 200px
+    +rounded-corners(5px)
+
+  textarea
+    min-height: 50px
+
+  .form-collection
+    +clearfix
+
+  .form-left-column
+    float: left
+    // border: 1px dashed red
+
+  .form-right-column
+    float: left
+    margin-left: $standard-spacing
+    // border: 1px dashed blue
